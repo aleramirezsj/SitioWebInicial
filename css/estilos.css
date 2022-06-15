@@ -1,0 +1,34 @@
+* {color:blue;}
+h1,h2 {
+    border: solid 1px black  ;
+    margin: 50px;
+}
+.textoGrande {font-size:24px;
+              color:brown;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+             ;}
+             
+#datosPersonales {
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+#educacion {
+    background: center/100% url("../imgs/fondo.webp") no-repeat  ;
+   
+    opacity: 50%;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px black;;
+}
+#educacion h2 {
+    background-color: beige;
+} 
+#datosPersonales h2 {
+    background-color: gray;
+}
+p > strong {
+    text-decoration:underline;
+    text-align: center;
+}
