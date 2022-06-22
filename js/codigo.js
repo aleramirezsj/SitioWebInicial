@@ -1,3 +1,12 @@
+function cargarAyuda(control){
+    var h3=document.getElementById("h3ayuda");
+    h3.innerHTML="Ingrese con mayúsculas su nombre";
+}
+function cargarAyuda2(){
+    var h3=document.getElementById("h3ayuda");
+    h3.innerHTML="Ingrese con mayúsculas su apellido";
+}
+
 function preguntarNombreYApellido(){
     var nombre=prompt("Ingresa tu nombre:");
     var apellido=prompt("Ingresa tu apellido:");

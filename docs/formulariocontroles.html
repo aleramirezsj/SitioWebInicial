@@ -8,13 +8,18 @@
 </head>
 <body bgcolor="gray">
     <h1>Prueba de controles de formularios HTML</h1>
+    <h3 id="h3ayuda"></h3>
     <hr/>
     <form action="../index.html" method="get">
         <label for="txtNombre">Nombre(TextBox):</label>
-        <input type="text" name="txtNombre" id="txtNombre" placeholder="escriba su nombre aquí"> 
+        <input type="text" name="txtNombre" id="txtNombre" 
+        placeholder="escriba su nombre aquí"
+        onfocus="cargarAyuda(this);"> 
         <br/>
         <label for="txtApellido">Apellido(TextBox):</label>
-        <input type="text" name="txtApellido" id="txtApellido" placeholder="escriba su apellido aquí"> 
+        <input type="text" name="txtApellido" id="txtApellido" 
+        placeholder="escriba su apellido aquí"
+        onfocus="cargarAyuda2();"> 
         <br/>
         <label for="chkCasado">Casado(checkbox):</label>
         <input type="checkbox" name="chkCasado" id="chkCasado">
@@ -67,8 +72,10 @@
         <label for="urlSitio">Sitio Web (url)</label>
         <input type="url" name="urlSitio" id="urlSitio">
         <br>
-        
+
         <br/><input type="submit" value="Enviar">
     </form>
+    <script src="../js/codigo.js"></script>
+    
 </body>
 </html>
