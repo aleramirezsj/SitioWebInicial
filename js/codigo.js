@@ -1,15 +1,34 @@
 
-function cargarAyuda(control){
+/*function cargarAyuda(control){
 let ayudas={"txtNombre":"Ingrese con mayúsculas su nombre",
             "txtApellido":"Ingrese con mayúsculas su apellido",
         "chkCasado":"Situación civil"};    
     var h3=document.getElementById("h3ayuda");
     
     h3.innerHTML=ayudas[control.name];
-}
-function cargarAyuda2(){
+}*/
+function cargarAyuda(control){
     var h3=document.getElementById("h3ayuda");
-    h3.innerHTML="Ingrese con mayúsculas su apellido";
+    if (control.name=="txtNombre")
+        var mensaje="Ingrese con mayúsculas su nombre";
+    if (control.name=="txtApellido")
+        var mensaje="Ingrese con mayúsculas su apellido";
+    if (control.name=="chkCasado")
+        var mensaje="Presione el cuadro para seleccionar o deseleccionar";    
+    h3.innerHTML=mensaje;
+}
+function cargarAyudaNombre(){
+    var h3=document.getElementById("h3ayuda");
+    h3.innerHTML="Ingrese con mayúsculas su Nombre";
+}
+function cargarAyudaApellido(){
+    var h3=document.getElementById("h3ayuda");
+    h3.innerHTML="Ingrese con mayúsculas su Apellido";
+}
+
+function cargarAyudaEstadoCivil(){
+    var h3=document.getElementById("h3ayuda");
+    h3.innerHTML="Presione el cuadro para seleccionar o deseleccionar";
 }
 
 function preguntarNombreYApellido(){

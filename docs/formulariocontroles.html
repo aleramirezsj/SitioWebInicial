@@ -9,7 +9,7 @@
 </head>
 <body bgcolor="gray">
     <h1>Prueba de controles de formularios HTML</h1>
-    <h3 id="h3ayuda"></h3>
+    <h3 id="h3ayuda">Ayuda</h3>
     <hr/>
     <form action="../index.html" method="get">
         <label for="txtNombre">Nombre(TextBox):</label>
@@ -24,7 +24,7 @@
         <br/>
         <label for="chkCasado">Casado(checkbox):</label>
         <input type="checkbox" name="chkCasado" id="chkCasado"
-        onfocus="cargarAyuda(this);">
+        onmouseover="cargarAyuda(this);">
         <br/>
         <label for="datFechaNacimiento">Fecha de Nacimiento(date):</label>
         <input type="date" name="datFechaNacimiento" id="datFechaNacimiento">
@@ -78,6 +78,7 @@
         <br/><input type="submit" value="Enviar">
     </form>
     <script src="../js/codigo.js"></script>
+    <script src="../js/bootstrap.js"></script>
     
 </body>
 </html>
