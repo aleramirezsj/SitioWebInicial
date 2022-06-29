@@ -1,6 +1,11 @@
+
 function cargarAyuda(control){
+let ayudas={"txtNombre":"Ingrese con mayúsculas su nombre",
+            "txtApellido":"Ingrese con mayúsculas su apellido",
+        "chkCasado":"Situación civil"};    
     var h3=document.getElementById("h3ayuda");
-    h3.innerHTML="Ingrese con mayúsculas su nombre";
+    
+    h3.innerHTML=ayudas[control.name];
 }
 function cargarAyuda2(){
     var h3=document.getElementById("h3ayuda");

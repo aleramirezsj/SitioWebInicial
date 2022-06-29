@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <title>Controles de Formularios HTML</title>
 </head>
 <body bgcolor="gray">
@@ -19,10 +20,11 @@
         <label for="txtApellido">Apellido(TextBox):</label>
         <input type="text" name="txtApellido" id="txtApellido" 
         placeholder="escriba su apellido aquí"
-        onfocus="cargarAyuda2();"> 
+        onfocus="cargarAyuda(this);"> 
         <br/>
         <label for="chkCasado">Casado(checkbox):</label>
-        <input type="checkbox" name="chkCasado" id="chkCasado">
+        <input type="checkbox" name="chkCasado" id="chkCasado"
+        onfocus="cargarAyuda(this);">
         <br/>
         <label for="datFechaNacimiento">Fecha de Nacimiento(date):</label>
         <input type="date" name="datFechaNacimiento" id="datFechaNacimiento">
