@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba en firebase</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
-<body>
-    <form id="carga-producto" action="" method="get">
-        <label for="txtNombre">Nombre</label>
-        <input type="text" name="txtNombre" id="txtNombre"/>
-        <label for="txtPrecio">Precio</label>
-        <input type="number" name="txtPrecio" id="txtPrecio"/>
-        <label for="txtRubro">Rubro</label>
-        <input type="text" name="txtRubro" id="txtRubro"/>
-        <button class="btn btn-primary" id="btnGuardar">Guardar</button>
-    </form>
+<body class="bg-dark">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="h4">Agregar Producto</h1>
+                        <form id="carga-producto" action="" method="get">
+                            <label for="txtNombre">Nombre</label>
+                            <input class="form-control mb-3" type="text" name="txtNombre" id="txtNombre"/>
+                            <label for="txtPrecio">Precio</label>
+                            <input class="form-control mb-3" type="number" name="txtPrecio" id="txtPrecio"/>
+                            <label for="txtRubro">Rubro</label>
+                            <input class="form-control mb-3" type="text" name="txtRubro" id="txtRubro"/>
+                            <button class="btn btn-primary" id="btnGuardar">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-6" id="containerProductos"></div>
+        </div>
+    </div>
+
     <script type="module" src="../js/index.js"></script>
 </body>
 </html>

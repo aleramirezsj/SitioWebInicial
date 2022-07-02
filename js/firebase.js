@@ -1,7 +1,15 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
-  import { getFirestore, collection, addDoc  } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js"  // TODO: Add SDKs for Firebase products that you want to use
+  import { getFirestore,
+         collection, 
+         addDoc, 
+         getDocs, 
+         onSnapshot, 
+         deleteDoc, 
+         doc,
+         getDoc,
+         updateDoc  } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js"  // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
   // Your web app's Firebase configuration
@@ -24,3 +32,13 @@
   export const guardarProducto=(nombre,precio,rubro)=>{
     addDoc(collection(db, 'productos'),{nombre,precio,rubro})
   }
+  export const listarProductos=()=>getDocs(collection(db,'productos'))
+  
+  export const onGetProductos=(callback)=>onSnapshot(collection(db,"productos"),(callback))
+
+  export const deleteProducto=id=>deleteDoc(doc(db,"productos",id))
+
+  export const getProducto=id=>getDoc(doc(db,"productos",id))
+
+  export const updateProducto=(id,productoEditado)=>
+    updateDoc(doc(db,"productos",id),productoEditado)
