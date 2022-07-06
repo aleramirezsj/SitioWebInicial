@@ -24,13 +24,13 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Pruebas
+                  Filas(rows)
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">De tablas</a></li>
-                  <li><a class="dropdown-item" href="#">De firebase</a></li>
+                  <li id="itemAlumnos"><a class="dropdown-item" href="#">Mostrar fila alumnos</a></li>
+                  <li id="itemCarrousel"><a class="dropdown-item" href="#">Mostrar fila carrousel</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">De Controles</a></li>
+                  <li id="itemAcordion"><a class="dropdown-item" href="#">Acordion y Formulario</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -46,8 +46,8 @@
         </div>
       </nav>
       <div class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row" id="fila1">
+            <div class="col-4">
                 <div class="card" style="width: 18rem;">
                     <img src="../imgs/fondo.webp" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -57,7 +57,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col">
+            <div class="col-4">
                 <div class="card text-center">
                     <div class="card-header">
                       Victor Bazan
@@ -73,7 +73,7 @@
                   </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="fila2">
             <div class="col">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -101,7 +101,58 @@
                   </div>                
             </div>
         </div>
+        <div class="row" id="fila3">
+            <div class="col-4">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Santa Fe
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Santa Fe de la Vera Cruz es la capital de la provincia de Santa Fe, en el noreste de Argentina. Está rodeada en parte por ríos y tiene paseos costeros con cafés y vistas al Puente Colgante. Los cruceros turísticos navegan por el río Paraná y su amplia red de afluentes</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Entre Rios
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Entre Ríos es una provincia de la región de Mesopotamia en el noreste de Argentina, entre los ríos Paraná y Uruguay. Es conocida por sus fuentes termales, como las de Federación, y su tradición de cultivar la yerba mate y beber el mate. Alberga 2 parques nacionales: Predelta, abundante en especies de aves, y El Palmar, una de las reservas que quedan de la palma yatay que alguna vez cubrió la región.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Buenos Aires
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Buenos Aires es la gran capital cosmopolita de Argentina. Su centro es la Plaza de Mayo, rodeada de imponentes edificios del siglo XIX, incluida la Casa Rosada, el icónico palacio presidencial que tiene varios balcones. Entre otras atracciones importantes, se incluyen el Teatro Colón, un lujoso teatro de ópera de 1908 con cerca de 2,500 asientos, y el moderno museo MALBA, que exhibe arte latinoamericano. </div>
+                      </div>
+                    </div>
+                  </div>                
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
-    <script src="../js/bootstrap.js"></script>    
+    <script src="../js/bootstrap.js"></script> 
+    <script src="../js/codigobootstrap.js"></script>   
 </body>
 </html>
